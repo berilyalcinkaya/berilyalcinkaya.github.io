@@ -2,20 +2,51 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C46WVKXGKP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C46WVKXGKP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C46WVKXGKP');
+  </script>
 
-  gtag('config', 'G-C46WVKXGKP');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Beril Yalcinkaya</title>
+
+  <!-- ✅ SEO additions (invisible) -->
+  <meta name="description" content="Beril Yalcinkaya is a Postdoctoral Researcher at the Wharton School, University of Pennsylvania." />
+  <link rel="canonical" href="https://berilyalcinkaya.github.io/" />
+
+  <meta property="og:title" content="Beril Yalcinkaya – Postdoctoral Researcher at Wharton" />
+  <meta property="og:description" content="Postdoctoral Researcher at The Wharton School, University of Pennsylvania." />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Beril Yalcinkaya",
+    "jobTitle": "Postdoctoral Researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "The Wharton School",
+      "parentOrganization": "University of Pennsylvania"
+    },
+    "url": "https://berilyalcinkaya.github.io/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=NX0ifr8AAAAJ",
+      "https://www.linkedin.com/in/yalcinkayaberil/"
+    ]
+  }
+  </script>
+  <!-- ✅ End SEO additions -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -42,7 +73,6 @@
       min-height: 100vh;
     }
 
-    /* ── Top bar ─────────────────────────────── */
     .topbar {
       background: var(--navy);
       height: 5px;
@@ -50,7 +80,6 @@
       flex-shrink: 0;
     }
 
-    /* ── Main layout ─────────────────────────── */
     .page {
       flex: 1;
       display: flex;
@@ -61,7 +90,6 @@
       padding: 0 2.5rem;
     }
 
-    /* ── Left column ─────────────────────────── */
     .left {
       flex: 1;
       padding: 5rem 4rem 4rem 0;
@@ -71,7 +99,6 @@
     }
 
     .eyebrow {
-      font-family: 'Inter', sans-serif;
       font-size: 0.85rem;
       font-weight: 500;
       letter-spacing: 0.14em;
@@ -91,10 +118,8 @@
 
     .subtitle {
       font-size: 1.1rem;
-      font-weight: 400;
       color: var(--muted);
       margin-bottom: 2.4rem;
-      line-height: 1.5;
     }
 
     hr {
@@ -110,15 +135,6 @@
       margin-bottom: 2.4rem;
     }
 
-    .bio-placeholder {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: #bbc3cc;
-      font-style: italic;
-      margin-bottom: 2.4rem;
-    }
-
-    /* ── Links ───────────────────────────────── */
     .links {
       display: flex;
       flex-direction: column;
@@ -136,7 +152,6 @@
       width: fit-content;
       padding: 0.25rem 0;
       border-bottom: 1.5px solid transparent;
-      transition: color 0.15s, border-color 0.15s;
     }
 
     .link-item:hover {
@@ -144,86 +159,35 @@
       border-bottom-color: var(--gold);
     }
 
-    .link-item.disabled {
-      color: #b0b8c4;
-      cursor: default;
-      pointer-events: none;
-    }
-
-    .link-icon {
-      width: 15px;
-      height: 15px;
-      flex-shrink: 0;
-      opacity: 0.75;
-    }
-
-    /* ── Right column / photo ────────────────── */
     .right {
-      flex-shrink: 0;
       width: 380px;
       display: flex;
       align-items: center;
-      padding: 4rem 0 4rem 0;
-    }
-
-    .photo-wrap {
-      width: 100%;
+      padding: 4rem 0;
     }
 
     .photo-wrap img {
       width: 100%;
       aspect-ratio: 3 / 4;
       object-fit: cover;
-      object-position: center top;
-      display: block;
     }
 
-    .photo-caption {
-      margin-top: 0.75rem;
-      font-size: 0.75rem;
-      color: var(--muted);
-      text-align: center;
-      letter-spacing: 0.04em;
-    }
-
-    /* ── Bottom bar ──────────────────────────── */
     .bottombar {
       background: var(--navy);
       color: rgba(255,255,255,0.45);
       font-size: 0.75rem;
       text-align: center;
       padding: 1rem;
-      letter-spacing: 0.04em;
-    }
-
-    /* ── Responsive ──────────────────────────── */
-    @media (max-width: 720px) {
-      .page {
-        flex-direction: column-reverse;
-        padding: 0 1.5rem;
-        align-items: center;
-      }
-      .left {
-        padding: 2rem 0 3rem 0;
-        text-align: center;
-        align-items: center;
-      }
-      .right {
-        width: 220px;
-        padding: 3rem 0 1rem 0;
-      }
-      h1 { font-size: 2.4rem; }
-      .links { align-items: center; }
     }
   </style>
 </head>
+
 <body>
 
   <div class="topbar"></div>
 
   <div class="page">
 
-    <!-- Left: content -->
     <div class="left">
       <p class="eyebrow">The Wharton School &nbsp;·&nbsp; University of Pennsylvania</p>
       <h1>Beril Yalcinkaya</h1>
@@ -231,49 +195,19 @@
 
       <hr />
 
-      <!-- ✏️  Replace the paragraph below with your bio when ready -->
       <p class="bio">
-        My research examines how firms attract, retain, and allocate human capital in response to technological change, investor dynamics, and policy constraints. Using large-scale workforce and career data, I study how these forces drive heterogeneity in organizational capabilities and workforce composition, as well as how high-skilled workers respond through mobility and career choices.
+        I am a Postdoctoral Researcher at the Wharton School. My research examines how firms attract, retain, and allocate human capital in response to technological change, investor dynamics, and policy constraints. Using large-scale workforce and career data, I study how these forces drive heterogeneity in organizational capabilities and workforce composition, as well as how high-skilled workers respond through mobility and career choices.
         <br><br>
         I earned my PhD in Strategic Management and Entrepreneurship from the Robert H. Smith School of Business at the University of Maryland. I also hold an MS in Applied Economics from Cornell University and a BA in Management from Boğaziçi University.
       </p>
 
       <nav class="links">
-
-        <!-- CV — remove the disabled class and add href when ready -->
-        <a class="link-item" href="https://drive.google.com/file/d/1E-RJEfQNqWh_ZI3P7b_dFr9-tf7v6buR/view?usp=sharing" target="_blank" rel="noopener" onclick="gtag('event', 'cv_click', {link_text: 'Curriculum Vitae'});">
-          <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-            <polyline points="10 9 9 9 8 9"/>
-          </svg>
-          Curriculum Vitae
-        </a>
-
-        <a class="link-item" href="https://scholar.google.com/citations?user=NX0ifr8AAAAJ&hl=en" target="_blank" rel="noopener" onclick="gtag('event', 'scholar_click', {link_text: 'Google Scholar'});">
-          <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="2" y1="12" x2="22" y2="12"/>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-          </svg>
-          Google Scholar
-        </a>
-
-        <a class="link-item" href="https://www.linkedin.com/in/yalcinkayaberil/" target="_blank" rel="noopener" onclick="gtag('event', 'linkedin_click', {link_text: 'LinkedIn'});">
-          <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-          LinkedIn
-        </a>
-
+        <a class="link-item" href="https://drive.google.com/file/d/1E-RJEfQNqWh_ZI3P7b_dFr9-tf7v6buR/view?usp=sharing" target="_blank">Curriculum Vitae</a>
+        <a class="link-item" href="https://scholar.google.com/citations?user=NX0ifr8AAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a class="link-item" href="https://www.linkedin.com/in/yalcinkayaberil/" target="_blank">LinkedIn</a>
       </nav>
     </div>
 
-    <!-- Right: photo -->
     <div class="right">
       <div class="photo-wrap">
         <img src="photo.jpg" alt="Beril Yalcinkaya" />
